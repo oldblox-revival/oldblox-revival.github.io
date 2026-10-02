@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OldBlox Revival</title>
-    <link rel="icon" href="https://herseybuoyunda.github.io/hbocdn.github.io/Favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://oldblox-revival.github.io/favicon.ico" type="image/x-icon">
     <style>
         body {
             margin: 0;
@@ -17,34 +17,40 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
             text-align: center;
-            background: rgba(0, 0, 0, 0.8);
-            padding: 40px;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            max-width: 500px;
-            width: 100%;
+            max-width: 650px;
+            width: 90%;
+            margin: 20px 0;
         }
-        h1 { margin-bottom: 10px; }
-        p { color: #cccccc; margin-bottom: 30px; }
+        .logo {
+            max-width: 180px;
+            margin-bottom: 15px;
+        }
+        h1 { margin-bottom: 5px; font-size: 24px; }
+        p { color: #cccccc; margin-bottom: 20px; font-size: 14px; }
         .downloads {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 10px;
         }
         .btn {
             background-color: #007bff;
             color: white;
-            padding: 12px 20px;
+            padding: 10px 15px;
             border: none;
             border-radius: 6px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 14px;
             text-decoration: none;
             transition: background 0.3s;
+            text-align: center;
         }
         .btn:hover {
             background-color: #0056b3;
@@ -53,12 +59,19 @@
 </head>
 <body>
     <div class="container">
+        <img src="https://oldblox-revival.github.io/OBXRLogoB.png" alt="OBXR Logo" class="logo">
         <h1>OldBlox Revival</h1>
-        <p>Platformunuzu seçin ve oynamaya başlayın!</p>
+        <p>Oynamak istediğiniz platformu seçin:</p>
         <div class="downloads">
-            <a href="#" class="btn">Windows İndir</a>
-            <a href="#" class="btn">Linux İndir</a>
-            <a href="#" class="btn">Android İndir</a>
+            <a href="OBXRWindows/" class="btn">Windows</a>
+            <a href="OBXRLinux/" class="btn">Linux</a>
+            <a href="OBXRMacOS/" class="btn">MacOS</a>
+            <a href="OBXRChromeOS/" class="btn">ChromeOS</a>
+            <a href="OBXRAndroid/" class="btn">Android</a>
+            <a href="OBXRIOS/" class="btn">İOS</a>
+            <a href="OBXRPlayStaysion/" class="btn">PlayStation</a>
+            <a href="OBXRXbox/" class="btn">Xbox</a>
+            <a href="OBXRIPadOS/" class="btn">İPadOS</a>
         </div>
     </div>
 </body>
