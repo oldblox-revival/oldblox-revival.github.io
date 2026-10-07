@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <div class="g-recaptcha" data-sitekey="6Ldh894tAAAAAGCJ6SGQpJUEojlA8vhGTsF2w5Mz"></div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OldBlox Revival</title>
+    
+    <!-- Favicon -->
     <link rel="icon" href="https://oldblox-revival.github.io/favicon.ico" type="image/x-icon">
+    
+    <!-- Google reCAPTCHA Script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <style>
         body {
             margin: 0;
@@ -37,6 +41,14 @@
         }
         h1 { margin-bottom: 5px; font-size: 24px; }
         p { color: #cccccc; margin-bottom: 20px; font-size: 14px; }
+        
+        /* reCAPTCHA Ortak Hizalama */
+        .recaptcha-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
         .downloads {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -64,16 +76,22 @@
         <img src="https://oldblox-revival.github.io/OBXRLogoB.png" alt="OBXR Logo" class="logo">
         <h1>OldBlox Revival</h1>
         <p>Oynamak istediğiniz platformu seçin:</p>
+        
+        <!-- Google reCAPTCHA (Doğru Yerleşim) -->
+        <div class="recaptcha-wrapper">
+            <div class="g-recaptcha" data-sitekey="6Ldh894tAAAAAGCJ6SGQpJUEojlA8vhGTsF2w5Mz"></div>
+        </div>
+
         <div class="downloads">
             <a href="OBXRWindows/" class="btn">Windows</a>
             <a href="OBXRLinux/" class="btn">Linux</a>
             <a href="OBXRMacOS/" class="btn">MacOS</a>
             <a href="OBXRChromeOS/" class="btn">ChromeOS</a>
             <a href="OBXRAndroid/" class="btn">Android</a>
-            <a href="OBXRIOS/" class="btn">İOS</a>
+            <a href="OBXRIOS/" class="btn">iOS</a>
             <a href="OBXRPlayStaysion/" class="btn">PlayStation</a>
             <a href="OBXRXbox/" class="btn">Xbox</a>
-            <a href="OBXRIPadOS/" class="btn">İPadOS</a>
+            <a href="OBXRIPadOS/" class="btn">iPadOS</a>
         </div>
     </div>
 </body>
